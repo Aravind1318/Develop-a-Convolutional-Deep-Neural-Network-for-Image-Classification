@@ -110,7 +110,7 @@ if torch.cuda.is_available():
     model.to(device)
 
 # Print model summary
-print('Name: Syed Mohamed Raihan')
+print('Name: Aravind P')
 print('Register Number: 212224240015')
 summary(model, input_size=(1, 28, 28))
 
@@ -132,7 +132,7 @@ def train_model(model, train_loader, num_epochs=3):
         optimizer.step()
         running_loss += loss.item()
 
-    print('Name:Syed Mohamed RaihanT')
+    print('Name:Aravind P')
     print('Register Number: 212224240015')
     print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
 
@@ -157,14 +157,14 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    print('Name: Syed Mohamed Raihan')
+    print('Name: Aravind P')
     print('Register Number: 212224240015')
     print(f'Test Accuracy: {accuracy:.4f}')
 
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     plt.figure(figsize=(8, 6))
-    print('Name: Syed Mohamed Raihan')
+    print('Name: Aravind P')
     print('Register Number: 212224240015')
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=test_dataset.classes, yticklabels=test_dataset.classes)
     plt.xlabel('Predicted')
@@ -173,7 +173,7 @@ def test_model(model, test_loader):
     plt.show()
 
     # Print classification report
-    print('Name: Syed Mohamed Raihan')
+    print('Name: Aravind P')
     print('Register Number: 212224240015')
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=test_dataset.classes))
@@ -191,7 +191,7 @@ def predict_image(model, image_index, dataset):
     class_names = dataset.classes
 
     # Display the image
-    print('Name: Syed Mohamed Raihan')
+    print('Name: Aravind P')
     print('Register Number:212224240015')
     plt.imshow(image.squeeze(), cmap="gray")
     plt.title(f'Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}')
