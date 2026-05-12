@@ -32,9 +32,9 @@ Image classification is a fundamental task in computer vision where an input ima
 
 ## PROGRAM
 
-### Name: Syed Mohamed Raihan M
+### Name: Aravind P
 
-### Register Number: 212224240167
+### Register Number: 212224240015
 
 ```python
 import torch
@@ -111,7 +111,7 @@ if torch.cuda.is_available():
 
 # Print model summary
 print('Name: Syed Mohamed Raihan')
-print('Register Number: 212224240167')
+print('Register Number: 212224240015')
 summary(model, input_size=(1, 28, 28))
 
 # Initialize model, loss function, and optimizer
@@ -133,7 +133,7 @@ def train_model(model, train_loader, num_epochs=3):
         running_loss += loss.item()
 
     print('Name:Syed Mohamed RaihanT')
-    print('Register Number: 212224240167')
+    print('Register Number: 212224240015')
     print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
 
 # Train the model
@@ -158,14 +158,14 @@ def test_model(model, test_loader):
 
     accuracy = correct / total
     print('Name: Syed Mohamed Raihan')
-    print('Register Number: 212224240167')
+    print('Register Number: 212224240015')
     print(f'Test Accuracy: {accuracy:.4f}')
 
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     plt.figure(figsize=(8, 6))
     print('Name: Syed Mohamed Raihan')
-    print('Register Number: 212224240167')
+    print('Register Number: 212224240015')
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=test_dataset.classes, yticklabels=test_dataset.classes)
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
@@ -174,7 +174,7 @@ def test_model(model, test_loader):
 
     # Print classification report
     print('Name: Syed Mohamed Raihan')
-    print('Register Number: 212224240167')
+    print('Register Number: 212224240015')
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=test_dataset.classes))
 
@@ -192,7 +192,7 @@ def predict_image(model, image_index, dataset):
 
     # Display the image
     print('Name: Syed Mohamed Raihan')
-    print('Register Number:212224240167')
+    print('Register Number:212224240015')
     plt.imshow(image.squeeze(), cmap="gray")
     plt.title(f'Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}')
     plt.axis("off")
